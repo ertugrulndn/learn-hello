@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'learn_verify'
+
+LearnVerify::Verification.execute
