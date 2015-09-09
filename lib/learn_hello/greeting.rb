@@ -13,24 +13,23 @@ module LearnHello
     end
 
     def execute
-      verify
+      introduce
       output_result
     end
 
     private
 
-    def verify
-      puts 'Verifying connection...'
+    def introduce
       self.result = client.verify_environment
     end
 
     def output_result
       if result.success?
-        puts "Success!".green
+        puts result.message
       elsif result.message.match(/coming soon/)
         puts result.message
       else
-        puts "Sorry, something went wrong. Please get in touch so we can help."
+        puts "Sorry, it looks like something went wrong. Please get in touch so we can help."
       end
     end
   end

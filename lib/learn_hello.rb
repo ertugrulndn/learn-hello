@@ -1,5 +1,4 @@
 require 'netrc'
-require 'colorize'
 require 'learn_web'
 
 require 'learn_hello/version'
