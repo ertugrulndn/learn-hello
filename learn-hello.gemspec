@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'learn_verify/version'
+require 'learn_hello/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "learn-verify"
-  spec.version       = LearnVerify::VERSION
+  spec.name          = "learn-hello"
+  spec.version       = LearnHello::VERSION
   spec.authors       = ["Flatiron School"]
   spec.email         = ["learn@flatironschool.com"]
 
@@ -23,5 +23,5 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "netrc"
   spec.add_runtime_dependency "colorize"
-  spec.add_runtime_dependency "learn-web", ">= 1.4.0"
+  spec.add_runtime_dependency "learn-web", ">= 1.4.1"
 end

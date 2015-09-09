@@ -1,5 +1,5 @@
-module LearnVerify
-  class Verification
+module LearnHello
+  class Greeting
     attr_reader   :client
     attr_accessor :result
 
