@@ -27,6 +27,8 @@ module LearnVerify
     def output_result
       if result.success?
         puts "Success!".green
+      elsif result.message.match(/coming soon/)
+        puts result.message
       else
         puts "Sorry, something went wrong. Please get in touch so we can help."
       end
