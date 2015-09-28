@@ -26,7 +26,7 @@ module LearnHello
     def output_result
       if result.success?
         puts result.message
-      elsif result.message.match(/coming soon/)
+      elsif result.message.match(/coming soon/) || result.message.match(/verified your email/)
         puts result.message
       else
         puts "Sorry, it looks like something went wrong. Please get in touch so we can help."
